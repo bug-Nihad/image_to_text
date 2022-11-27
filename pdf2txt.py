@@ -27,7 +27,7 @@ def ocr(pdf_path):
             print('Hello')
             
             pdf_pages = convert_from_path(
-                PDF_file, 350, poppler_path=path_to_poppler_exe, fmt="jpeg"
+                PDF_file, 450, poppler_path=path_to_poppler_exe, fmt="jpeg"
             )
 
             print('Hello')
