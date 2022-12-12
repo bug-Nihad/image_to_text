@@ -27,7 +27,7 @@ def ocr(pdf_path):
             print('Hello')
             
             pdf_pages = convert_from_path(
-                PDF_file, 450, poppler_path=path_to_poppler_exe, fmt="jpeg"
+                PDF_file, 400, poppler_path=path_to_poppler_exe, fmt="jpeg"
             )
 
             print('Hello')
@@ -79,8 +79,9 @@ for i in range(2):
         with open(log_path, 'r') as log_file:
             if x + '\n' in log_file.readlines():
                 print(x , ' is done already.')
-                continue
-        file_path = os.getcwd() + '\Form C\\' + x
+                #continue
+        #file_path = os.getcwd() + '\Form C\\' + x
+        file_path =r'C:\Users\Tahsin Sayed\Desktop\Image_to_text\Form C\anyone Media Network, Inc2018_0.pdf'
         # print(Path(file_path))
         # print(Path(file_path).rstrip('\\', 1))
         try:
