@@ -77,11 +77,11 @@ for i in range(2):
         log_path = r'C:\Users\Tahsin Sayed\Desktop\Image_to_text\Form C\log.txt'
         
         with open(log_path, 'r') as log_file:
-            if x + '\n' in log_file.readlines():
+            if x  in log_file.read():
                 print(x , ' is done already.')
-                #continue
-        #file_path = os.getcwd() + '\Form C\\' + x
-        file_path =r'C:\Users\Tahsin Sayed\Desktop\Image_to_text\Form C\anyone Media Network, Inc2018_0.pdf'
+                continue
+        file_path = os.getcwd() + '\Form C\\' + x
+        # file_path =r'C:\Users\Tahsin Sayed\Desktop\Image_to_text\Form C\anyone Media Network, Inc2018_0.pdf'
         # print(Path(file_path))
         # print(Path(file_path).rstrip('\\', 1))
         try:
